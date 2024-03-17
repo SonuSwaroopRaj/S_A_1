@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://i.pinimg.com/originals/93/11/85/93118536f1a0b9bc8c95f4f4a599c6cc.jpg');
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h2{
+  color: white;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif
+}
+
+textarea {
+  height: 150px;
+  border-radius: 15px;
+  background: linear-gradient(90deg, white, rgb(146, 197, 214));
+  color: black;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  border: 1px solid blue;
+  transition: all 0.3s ease;
+}
+
+textarea:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+p{
+  color: white;
+}
+
+.hentai{
+  margin-top: 100px;
+}
+
+.rajini{
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 5px;
+  color: white;
+}
+
+h3{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.loader {
+  width: 45px;
+  aspect-ratio: 1;
+  --c: no-repeat linear-gradient(#e8e6e6 0 0);
+  background: 
+    var(--c) 0%   50%,
+    var(--c) 50%  50%,
+    var(--c) 100% 50%;
+  background-size: 20% 100%;
+  animation: l1 1s infinite linear;
+}
+@keyframes l1 {
+  0%  {background-size: 20% 100%,20% 100%,20% 100%}
+  33% {background-size: 20% 10% ,20% 100%,20% 100%}
+  50% {background-size: 20% 100%,20% 10% ,20% 100%}
+  66% {background-size: 20% 100%,20% 100%,20% 10% }
+  100%{background-size: 20% 100%,20% 100%,20% 100%}
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  font-size: 15px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+}
+
+.btn:after,
+.btn:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 0px solid #fff;
+  transition: all 1s;
+}
+
+.btn:after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid skyblue;
+  border-left: 5px solid skyblue;
+}
+
+.btn:before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px solid skyblue;
+  border-right: 5px solid skyblue;
+}
+
+.btn:hover {
+  color: white;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.btn:hover:before,
+.btn:hover:after {
+  width: 100%;
+  height: 100%;
+}
+
+.bar-graph-container {
+  margin-top: 20px;
+}
+
+.bar-graph {
+  height: 20px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.positive {
+  background-color: #00ff00; /* Green */
+  border-radius: 6px;
+}
+
+.neutral {
+  background-color: yellow;
+  border-radius: 6px;
+}
+
+.negative {
+  background-color: #ff0000; /* Red */
+  border-radius: 6px;
+}
